@@ -1,2 +1,2 @@
-# tienda_cuchillos
-Repositorio para el curso de boostrap modulo 2
+# productos_cuchillos
+Curso de Boostrap
