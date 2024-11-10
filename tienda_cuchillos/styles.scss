@@ -1,0 +1,13 @@
+$color-yellow: #ffc107;
+$color-red: #d9534f;
+$color-green: #5cb85c;
+
+@mixin custom-styles {
+  margin: 10px;
+  padding: 10px;
+  border-color: $color-red;
+}
+
+.container {
+  @include custom-styles;
+}

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "scss": "node-sass -o css/ css/"
   },
   "keywords": [],
   "author": "Bastián Castro",
@@ -16,4 +17,3 @@
     "popper.js": "^1.16.1"
   }
 }
-  

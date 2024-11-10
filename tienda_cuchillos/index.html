@@ -135,5 +135,33 @@
       ride: 'carousel'
     });
   </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var modal = document.getElementById('registerModal');
+    var modalBtn = document.querySelector('[data-bs-toggle="modal"]');
+  
+    modal.addEventListener('show.bs.modal', function () {
+      console.log('Modal is opening');
+      modalBtn.disabled = true;
+      modalBtn.style.backgroundColor = '#d9534f'; // Red
+    });
+  
+    modal.addEventListener('shown.bs.modal', function () {
+      console.log('Modal opened');
+    });
+  
+    modal.addEventListener('hide.bs.modal', function () {
+      console.log('Modal is closing');
+    });
+  
+    modal.addEventListener('hidden.bs.modal', function () {
+      console.log('Modal closed');
+      modalBtn.disabled = false;
+      modalBtn.style.backgroundColor = '#007bff'; // Original Blue
+    });
+  });
+  </script>
+  
 </body>
 </html>
